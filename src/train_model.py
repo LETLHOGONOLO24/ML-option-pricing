@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 # 1. Load the dataset
 # --------------------------------------------------
 
-df = pd.read_csv("data/processed/black_scholes_dataset.csv")
+df = pd.read_csv("C:/Users/HLOGIZNBUCKS/Downloads/ML-option-pricing/data/processed/black_scholes_dataset.csv")
 
 print("Dataset loaded successfully.")
 print(f"Number of observations: {len(df)}")
@@ -82,7 +82,7 @@ for actual, predicted in zip(y_test.iloc[:10], y_pred[:10]):
 
 joblib.dump(
     model,
-    "results/random_forest_model.pkl"
+    "C:/Users/HLOGIZNBUCKS/Downloads/ML-option-pricing/results/random_forest_model.pkl"
 )
 
 print("\nTrained model saved successfully.")
